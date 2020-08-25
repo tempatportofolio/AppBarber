@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#013E2C"
+    android:id="@+id/regis"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+ <androidx.cardview.widget.CardView
+     android:layout_centerInParent="true"
+     android:layout_width="match_parent"
+     app:cardElevation="10dp"
+     app:cardCornerRadius="10dp"
+     app:cardBackgroundColor="#E8EAEC"
+     android:layout_marginRight="50dp"
+     android:layout_height="wrap_content">
+
+   <RelativeLayout
+       android:layout_marginTop="20dp"
+       android:layout_marginBottom="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="REGISTER"
+       android:textSize="35sp"
+       android:fontFamily="sans-serif-black"
+       android:textColor="#03492D"
+       android:id="@+id/tvreg"
+       android:layout_marginTop="5dp"
+       android:layout_centerHorizontal="true"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/r1"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="40dp"
+        app:hintTextColor="@color/colorAccent"
+        android:layout_below="@+id/tvreg"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_height="wrap_content">
+
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:id="@+id/et_nama"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Nama"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/r2"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        app:hintTextColor="@color/colorAccent"
+        android:layout_below="@+id/r1"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/r1"
+        android:backgroundTint="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/et_regemail"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Email"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/r3"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/colorAccent"
+
+        app:hintTextColor="@color/colorAccent"
+        android:layout_below="@+id/r2"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et_regemail"
+        android:backgroundTint="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/et_regpassword"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded"
+        android:text="Daftar"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_regis"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        android:textAllCaps="false"
+        android:layout_below="@+id/r3"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:layout_marginBottom="30dp"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_regis"
+        android:id="@+id/text_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"/>
+
+   </RelativeLayout>
+
+ </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

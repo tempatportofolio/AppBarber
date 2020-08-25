@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AppBarber</string>
+    <string name="register">Dont Have Account ? <b><u><font color='#3DE563'>Register</font></u></b></string>
+    <string name="login"><font color='#000'>Already Have Account ? </font><b><u><font color='#00683F'>Login</font></u></b></string>
+    <string name="wlcom">Selamat Datang di <b> CUKURAN </b> </string>
+    <string name="wlcom1"><i>Cukur murah dan Nyaman</i></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_dashboard">dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="label">Notifications</string>
+</resources>

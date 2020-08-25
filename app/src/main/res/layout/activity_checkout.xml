@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f2f4f5"
+    android:layout_height="match_parent"
+    tools:context=".checkout">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_co"
+        app:cardElevation="5dp"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="205dp">
+
+        <RelativeLayout
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="20sp"
+                android:fontFamily="@font/raleway_bold"
+                android:id="@+id/dtl_pesanan"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detail Pesanan :"/>
+
+            <TextView
+                android:id="@+id/nm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama "
+                android:textColor="#000"
+                android:layout_below="@+id/dtl_pesanan"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/raleway_medium"/>
+
+            <TextView
+                android:id="@+id/tgl"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Cukur "
+                android:layout_below="@+id/nm"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/raleway_medium"/>
+
+            <TextView
+                android:id="@+id/jm"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jam "
+                android:layout_below="@+id/tgl"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/raleway_medium"/>
+
+            <TextView
+                android:id="@+id/lyn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Layanan "
+                android:textColor="#000"
+                android:layout_below="@+id/jm"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/raleway_medium"/>
+
+
+            <TextView
+                android:text="a"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/dtl_pesanan"
+                android:layout_toRightOf="@+id/nm"
+                android:id="@+id/txtView"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_below="@+id/nm"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tgl"
+                android:id="@+id/txtView2"
+                android:textColor="#000"
+                android:text="a"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="85dp"
+                />
+            <TextView
+                android:layout_below="@+id/tgl"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/jm"
+                android:id="@+id/txtView3"
+                android:textColor="#000"
+                android:text="a"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="164dp"/>
+            <TextView
+                android:layout_below="@+id/jm"
+                android:layout_toRightOf="@+id/lyn"
+                android:layout_marginTop="10dp"
+                android:id="@+id/txtView4"
+                android:textColor="#000"
+                android:text="a"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="132dp"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/finish"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_bold"
+        android:background="@drawable/rounded2"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/cancel"
+        android:text="Finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/cancel"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_bold"
+        android:background="@drawable/cancel"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/cv_co"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</RelativeLayout>

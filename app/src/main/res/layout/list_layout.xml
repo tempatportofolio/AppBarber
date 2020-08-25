@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="#00683F"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewName"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Rachmad Andri"
+                 />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/textViewName"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blitar Indonesia"
+                android:id="@+id/textViewAddress"
+                />
+
+            <TextView
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:layout_below="@+id/textViewAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blitar Indonesia"
+                android:id="@+id/textViewAddress2"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

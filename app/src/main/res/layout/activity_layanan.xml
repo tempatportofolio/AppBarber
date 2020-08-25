@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFF9F9"
+    android:layout_height="match_parent"
+    tools:context=".layanan">
+
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvprod"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/raleway_bold"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Produk"/>
+
+    <HorizontalScrollView
+        android:layout_below="@+id/tvprod"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/scview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                app:cardElevation="8dp"
+
+                app:cardBackgroundColor="#FFF"
+                app:cardCornerRadius="6dp"
+                android:layout_height="160dp">
+
+                <RelativeLayout
+                    android:background="@drawable/prd"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/pmd1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/pomade1"/>
+
+                    <TextView
+                        android:id="@+id/txpmd1"
+                        android:textColor="#fff"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Pomade Folti Baffi"
+                        android:layout_below="@+id/pmd1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/hrpmd1"
+                        android:textColor="#fff"
+                        android:layout_alignParentRight="true"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        android:text="Rp. 80,000"
+                        android:layout_below="@+id/txpmd1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_marginLeft="10dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="6dp"
+                android:layout_height="160dp">
+
+                <RelativeLayout
+                    android:background="@drawable/prd"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/pmd2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/pomade2"/>
+
+                    <TextView
+                        android:id="@+id/txpmd2"
+                        android:textColor="#fff"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Wahl Hair Pomade"
+                        android:layout_below="@+id/pmd2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/hrpmd2"
+                        android:textColor="#fff"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        android:text="Rp. 140,000"
+                        android:layout_below="@+id/txpmd2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_marginLeft="10dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#ffF"
+                app:cardCornerRadius="6dp"
+                android:layout_height="160dp">
+
+                <RelativeLayout
+                    android:padding="5dp"
+                    android:background="@drawable/prd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/pmd3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/pomade3"/>
+
+                    <TextView
+                        android:id="@+id/txpmd3"
+                        android:textColor="#fff"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Reuzel Pomade"
+                        android:layout_below="@+id/pmd3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/hrpmd3"
+                        android:textColor="#fff"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        android:text="Rp. 180,000"
+                        android:layout_below="@+id/txpmd3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_marginLeft="10dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#ffF"
+                app:cardCornerRadius="6dp"
+                android:layout_height="160dp">
+
+                <RelativeLayout
+                    android:padding="5dp"
+                    android:background="@drawable/prd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/pmd4"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/pomade4"/>
+
+                    <TextView
+                        android:id="@+id/txpmd4"
+                        android:textColor="#fff"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Pacinos Pomade"
+                        android:layout_below="@+id/pmd4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/hrpmd4"
+                        android:textColor="#fff"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        android:text="Rp. 286,000"
+                        android:layout_below="@+id/txpmd4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:layout_below="@+id/scview"
+        android:id="@+id/tvlay"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/raleway_bold"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Layanan"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="10dp"
+        android:id="@+id/cvlyn1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/tvlay">
+
+        <RelativeLayout
+            android:background="@drawable/bg1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cukur Biasa"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:id="@+id/jdl1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/roboto_bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cukur"
+                android:id="@+id/lyn1"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:textColor="#fff"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/jdl1"
+                android:fontFamily="@font/roboto_medium"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cuci Rambut"
+                android:id="@+id/lyn2"
+                android:textSize="12sp"
+                android:textColor="#fff"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/lyn1"
+                android:fontFamily="@font/roboto_medium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hrg1"
+                android:layout_marginRight="10dp"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Rp. 30,000"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="10dp"
+            android:id="@+id/cvlyn2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/cvlyn1">
+
+            <RelativeLayout
+                android:background="@drawable/bg2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paket 1"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:id="@+id/jdl2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/roboto_bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cukur"
+                    android:id="@+id/lyn2.1"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/jdl2"
+                    android:fontFamily="@font/roboto_medium"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cuci Rambut"
+                    android:id="@+id/lyn2.2"
+                    android:textSize="12sp"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/lyn2.1"
+                    android:fontFamily="@font/roboto_medium"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vitamin Rambut"
+                    android:id="@+id/lyn2.3"
+                    android:textSize="12sp"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/lyn2.2"
+                    android:fontFamily="@font/roboto_medium"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hrg2"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Rp. 50,000"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="10dp"
+            android:id="@+id/cvlyn3"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/cvlyn2">
+
+            <RelativeLayout
+                android:background="@drawable/bg3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paket 2"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:id="@+id/jdl3"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/roboto_bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cukur"
+                    android:id="@+id/lyn3.1"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/jdl3"
+                    android:fontFamily="@font/roboto_medium"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cuci Rambut"
+                    android:id="@+id/lyn3.2"
+                    android:textSize="12sp"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/lyn3.1"
+                    android:fontFamily="@font/roboto_medium"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vitamin Rambut"
+                    android:id="@+id/lyn3.3"
+                    android:textSize="12sp"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/lyn3.2"
+                    android:fontFamily="@font/roboto_medium"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cukur Janggut + Kumis"
+                    android:id="@+id/lyn3.4"
+                    android:textSize="12sp"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/lyn3.3"
+                    android:fontFamily="@font/roboto_medium"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hrg3"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Rp. 75,000"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
